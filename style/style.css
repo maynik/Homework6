@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('./font/CeraPro-Regular.woff2') format('woff2'),
+         url('./font/CeraPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+    .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+}
+    .content {
+        display: inline-block;
+    }
+
+    header .container {
+        background-color: #fff;
+        margin-top: 25px;
+        text-align: center;
+    }
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+}
+
+header {
+    margin-bottom: 12px;
+}
+header img,
+nav,
+.button-login {
+    display: inline-block;
+    vertical-align: middle;
+}
+nav ul {
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Cera Pro', sans-serif;
+    margin: 0 25px;
+}
+
+nav ul li a.active {
+    border-bottom: 2px solid #46A358;
+    padding-bottom: 23px;
+    font-weight: 700;
+}
+hr {
+    height: 0.1px;
+    background: #46A358;
+}
+header a {
+    text-decoration: none;
+    color: black;
+}
+.button-login {
+    float: right;
+    background-color: #46A358;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Cera Pro', sans-serif;
+    border-radius: 10px;
+    padding: 8px 15px;
+}
+
+header .container img {
+    float: left;
+}
+
+img.icon-btn {
+    padding-right: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.container .left-side {
+    float: left;
+    max-width: 50%;
+    padding-left: 43px;
+    padding-top: 65px;
+}
+
+.container .right-side {
+    float: right;
+}
+
+p.welcome {
+    color: #3D3D3D;
+    font-size: 14px;
+    font-family: 'Cera Pro', sans-serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 70px;
+    font-family: 'Cera Pro', sans-serif;
+    color: #3D3D3D;
+    margin: 0;
+}
+h1 span {
+    color: #46A358;
+}
+
+p.text1 { 
+    color: #727272;
+    font-size: 14px;
+    font-family: 'Cera Pro', sans-serif;
+    max-width: 557px;
+    margin-bottom: 44px;
+}
+
+.button-shop {
+    background-color: #46A358;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Cera Pro', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 11px 27px 9px 26px;
+}
