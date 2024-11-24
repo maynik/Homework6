@@ -29,44 +29,12 @@ section {
 header {
     margin-bottom: 12px;
 }
+
 header img,
 nav,
 .button-login {
     display: inline-block;
     vertical-align: middle;
-}
-nav ul {
-    display: inline-block;
-}
-
-nav ul li {
-    display: inline-block;
-    font-size: 16px;
-    font-family: 'Cera Pro', sans-serif;
-    margin: 0 25px;
-}
-
-nav ul li a.active {
-    border-bottom: 2px solid #46A358;
-    padding-bottom: 23px;
-    font-weight: 700;
-}
-hr {
-    height: 0.1px;
-    background: #46A358;
-}
-header a {
-    text-decoration: none;
-    color: black;
-}
-.button-login {
-    float: right;
-    background-color: #46A358;
-    color: #fff;
-    font-size: 16px;
-    font-family: 'Cera Pro', sans-serif;
-    border-radius: 10px;
-    padding: 8px 15px;
 }
 
 header .container img {
@@ -77,6 +45,122 @@ img.icon-btn {
     padding-right: 5px;
     width: 20px;
     height: 20px;
+}
+
+
+nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li {
+    position: relative; 
+}
+nav ul li svg{
+    position: relative;
+    right: -60px;
+}
+
+
+  li:hover > a .arrow-icon {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+  }
+  
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-family: 'Cera Pro', sans-serif;
+    padding: 10px 15px;
+    font-weight: 600;
+}
+
+nav ul li a.active {
+    border-bottom: 2px solid #46A358;
+    padding-bottom: 24px;
+    font-weight: 700;
+}
+
+nav ul li a:hover {
+    color: #46A358;
+}
+
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 200%;
+    left: 0;
+    background-color: #EDF6EE;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ddd;
+    z-index: 1000;
+}
+
+nav ul li ul li {
+    padding: 7px;
+    width: 190px;
+    display: block;
+}
+
+nav ul li ul li a {
+    padding: 10px 15px;
+    color: black;
+    font-family: 'Cera Pro', sans-serif;
+    font-size: 14px;
+    font-family: 'Cera Pro', sans-serif;
+}
+
+nav ul li ul li a:hover {
+    color: #46A358;
+}
+
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+
+nav ul li ul li ul {
+    left: 100%;
+    top: 0;
+    display: none;
+    font-family: 'Cera Pro', sans-serif;
+    background-color: #EDF6EE;
+}
+
+nav ul li ul li:hover > ul {
+    display: block;
+}
+
+
+.button-login {
+    float: right;
+    background-color: #46A358;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Cera Pro', sans-serif;
+    border-radius: 10px;
+    padding: 8px 15px;
+    text-decoration: none;
+}
+
+.button-login:hover {
+    background-color: #399b48;
+}
+
+
+hr {
+    margin-top: 25px;
+    height: 0.01px;
+    background: #46A358;
 }
 
 .container .left-side {
